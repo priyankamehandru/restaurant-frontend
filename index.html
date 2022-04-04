@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="homepage.css">
+    <link rel="stylesheet" media="screen and (max-width:500px)" href=" phone.css">
+</head>
+
+<body>
+    <header class="homeHeader">
+        <nav class="Navigation">
+            <img class="img1" id="navimg" src="tea.jpg" alt="not found">
+            <ul class="list" id="list-nav">
+                <li class="list-class" id="List-Id1"><a href="#">Home</a></li>
+                <li class="list-class" id="List-Id2"><a href="#Rate">Rate list</a></li>
+                <li class="list-class" id="List-Id3"><a href="#">Feedback</a></li>
+                <li class="list-class" id="List-Id4"><a href="#">Help</a></li>
+                <li class="list-class" id="List-Id5"><a href="#contact">Contact us</a></li>
+            </ul>
+            <button class="btn">Sign in</button>
+            <nav class="ResponsiveNavigation">
+                <img id="hamburger" src="hamburger.png" alt="not found">
+
+            </nav>
+        </nav>
+        <div class="Home">
+            <div class="Home-div1">
+                Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quidem porro laborum sit eius unde totam
+                aliquam
+                adipisci itaque deserunt iusto!
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Eligendi magni repellat quam debitis fugit
+                earum quisquam alias vero quas? Autem aspernatur inventore molestias pariatur ratione corporis magni
+                rerum itaque quas?
+            </div>
+            <div class="Order">
+                <button class="btnOrder">Order Now</button>
+            </div>
+        </div>
+    </header>
+    <div class="services">
+        <div>
+            <h1><a name="Rate">Services</h1></a>
+        </div>
+        <div class="services-block">
+
+            <div class="services-menu">
+                <img src="salad.jpg" alt="not found">
+                <p>
+                    Lorem ipsum dolor sit amet consect Lorem ipsum dolor sit amet consectetur adipisicing elitetur
+                    adipisicing elit. Fuga, nobis?
+                </p>
+            </div>
+            <div class="services-menu">
+                <img src="raspberry.jpg" alt="not found">
+                <p>
+                    Lorem ipsum dolor sit amet consectetur Lorem ipsum dolor sit amet consectetur adipisicing
+                    elitadipisicing elit. Fuga, nobis?
+                </p>
+            </div>
+            <div class="services-menu">
+                <img src="tea.jpg" alt="not found">
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing e Lorem ipsum dolor sit amet consectetur
+                    adipisicing elitlit. Fuga, nobis?
+                </p>
+            </div>
+            <div class="services-menu">
+                <img src="pizza.jpg" alt="not found">
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Fuga, n Lorem ipsum dolor sit amet
+                    consectetur adipisicing elitobis?
+                </p>
+            </div>
+        </div>
+    </div>
+    <div class="contact">
+        <div class="contact-heading">
+            <h1><a name="contact">Sign in</a></h1>
+        </div>
+        <div class="form">
+            <form action="form.php">
+                <div class="form-input">
+                    <label for="name">Name </label>
+                    <input id="name" class="input" type="text" name="Name" placeholder="Name">
+                </div>
+                <div class="form-input">
+                    <label for="email">Email </label>
+                    <input id="email" class="input" type="email" placeholder="Email" name="Email">
+                </div>
+                <div class="form-input">
+                    <label for="mobile">Phone number </label>
+                    <input id="mobile" class="input" type="text" placeholder="Phone number" name="Phone number">
+                </div>
+                <div class="form-input">
+                    <div>
+                        <label for="gender">Gender : </label>
+                        <input id="gender" type="radio" name="gender">Male
+                        <input id="gender" type="radio" name="gender">Female
+                    </div>
+                </div>
+                <div>
+
+                    <input id="submit" type="submit" value="Sign in">
+                </div>
+            </form>
+        </div>
+    </div>
+    <footer class="footer">
+        <div>
+            <a href="" class="socials"><img src="linkedin.png" alt="not found"></a>
+            <a href="" class="socials"><img src="instagram.png" alt="not found"></a>
+            <a href="" class="socials"><img src="twitter.png" alt="not found"></a>
+        </div>
+        <p> © All copyright reserved </p>
+    </footer>
+    <script>
+        let hamburger = document.getElementById("hamburger");
+        hamburger.addEventListener("click", function f() {
+            let hamburger = document.getElementById("hamburger");
+            let list = document.getElementById("list-nav");
+            let sign = document.getElementsByClassName("btn");
+            let img1 = document.getElementById("navimg");
+            if(list.style.display == "none")
+            {
+                
+                list.style.display = "flex";
+                
+            }
+            else{
+                
+                list.style.display = "none";
+                
+            }
+        });
+    </script>
+</body>
+
+</html>
